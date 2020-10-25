@@ -6,3 +6,165 @@
   * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
   *
 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h3 {
+  text-align: center;
+  margin: 10%;
+}
+
+h3.score-text {
+  font-size: 2.5rem;
+}
+
+#begin-quiz {
+  text-align: center;
+}
+.beginning-text {
+  width: 90%;
+  margin: 0 auto;
+  line-height: 2rem;
+}
+
+.announce {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #dc0b12;
+}
+
+.btn {
+  margin-top: 15%;
+  background-color: #dc0b12;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  width: 200px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#feedback,
+#final-score {
+  text-align: center;
+}
+
+/*FORM STYLE*/
+
+.test-question {
+  background-color: #dc0b12;
+  line-height: 1.5rem;
+  padding: 15px;
+}
+
+.answerContainer {
+  width: 100%;
+  margin: 5% 0 0 10%;
+  line-height: 2rem;
+}
+
+label {
+  margin-left: 5%;
+  font-size: 1.25rem;
+}
+
+#submitBtn {
+  margin: 10% 0 0 55%;
+  transform: translateX(-50%);
+  padding: 10px;
+}
+
+/*FEEDBACK STYLE*/
+
+#feedback .feedback-text {
+  padding: 25px;
+  font-size: 2rem;
+}
+
+#feedback .feedback-text.correct {
+  background-color: green;
+}
+
+#feedback .feedback-text.incorrect {
+  background-color: #dc0b12;
+}
+
+#feedback .feedback-text.incorrect .correct-answer {
+  font-weight: 800;
+}
+
+/*FINAL SCORE STYLE*/
+
+.result-message-header.result-pass {
+  color: green;
+}
+
+.result-message-header.result-fail {
+  color: #dc0b12;
+}
+
+.result-message {
+  font-size: 2rem;
+}
+
+@media all and (min-width: 700px) {
+  p {
+    font-size: 18px;
+  }
+
+  .announce {
+    margin-top: 5%;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  img {
+    width: 50%;
+  }
+
+  main {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  p,
+  .test-question {
+    font-size: 24px;
+    line-height: 2rem;
+    text-align: center;
+  }
+
+  .btn {
+    margin-top: 5%;
+  }
+
+  .btn .restart-btn {
+    width: 250px;
+  }
+
+  form .answerContainer {
+    margin: 5%;
+    padding: 0 15px;
+  }
+}
